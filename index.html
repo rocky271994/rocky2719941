@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            padding: 10rem;
+            background-color: blanchedalmond;
+          }
+          
+      
+          input,
+          textarea,
+          button {
+            width: 100%;
+            border: 1px solid black;
+          }
+          
+          .wrapper {
+            box-shadow: 0 0 5px 0 lightslategray;
+          }
+          .wrapper > * {
+            padding: 1em;
+          }
+          
+          /* ul {
+            list-style: none;
+            padding: 0;
+          } */
+          
+          
+          .form {
+            background: lightgray;
+            margin:10px;
+            padding: 30px;
+          }
+          
+          form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+          }
+          form label {
+            display: block;
+          }
+          form p {
+            margin: 20px;
+          }
+          
+          .full-width {
+            grid-column: 1/ 3;
+          }
+          
+          h1 {
+              margin-top: 10px;
+          }
+          button,
+          input,
+          textarea {
+            padding: 10px; 
+          }
+          
+          button {
+            background: lightgoldenrodyellow;
+            width: 100%;
+            border: 0;
+          }
+          button:hover, button:focus {
+            background: grey;
+            outline: 0;
+            color: white;
+          }
+      
+          input:focus,
+          textarea:focus {
+            outline: 2px solid black;
+          }
+          
+          p:hover {
+            /* font-size: larger; */
+            font-weight: bolder;
+          }
+      
+          @media (min-width: 768px) {
+            .wrapper {
+              display: grid;
+              grid-template-columns: 1fr 2fr;
+            }
+            .wrapper > * {
+              padding: 2em 2em;
+            } 
+          } 
+      
+          </style>
+</head>
+<body>
+    <div class="contain">
+       
+      
+        <div class="form">
+            <h1>Clinical Care System</h1>
+            <form action="patient.html"method="">
+              <p>
+                <label for="username">Username</label>
+                <input type="text">
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input type="text">
+              </p>
+
+              <p class="full-width">
+                <button>Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
